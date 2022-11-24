@@ -1,0 +1,88 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-button (click)="mostrarMenu()" color="tertiary">
+          <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+        </ion-button>
+
+   
+  
+      <ion-title color="primary">Viaje </ion-title>
+
+         
+      <ion-button (click)="logout()" expand="full" color="tertiary" class="btn2">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+        </ion-button>
+     
+     </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+
+    <ion-title class="titulo"> Punto de partida </ion-title>
+              <p class="sede">Sede Maipú</p>
+  
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Seleccione su lugar de destino" [multiple]="false">
+          <ion-select-option value="Providencia">Providencia: $5.000 </ion-select-option>
+          <ion-select-option value="Las condes">Las condes: $6.000</ion-select-option>
+          <ion-select-option value="Maipu">Maipu: $2.000</ion-select-option>
+          <ion-select-option value="Lo Barnechea">Lo Barnechea: 10.000  </ion-select-option>
+          <ion-select-option value="Padre Hurtado">Padre Hurtado: 4.000</ion-select-option>
+          <ion-select-option value="Cerrillos">Cerrillos: 3.400</ion-select-option>
+          <ion-select-option value="Pudahuel">Pudahuel: 2.500 </ion-select-option>
+          <ion-select-option value="Quinta Normal">Quinta Normal: 8.000 </ion-select-option>
+          <ion-select-option value="Estacion Central">Estacion Central: 6.000</ion-select-option>
+          <ion-select-option value="San bernardo">San bernardo: 90.00</ion-select-option>
+          <ion-select-option value="La pintana">La pintana: 6.000</ion-select-option>
+          <ion-select-option value="Pedro aguirre cerda">Pedro aguirre cerda: 4.000</ion-select-option>
+          <ion-select-option value="Macul">Macul: 7.000</ion-select-option>
+          <ion-select-option value="La florida">La florida: 8.000</ion-select-option>
+          <ion-select-option value="La reina">La reina: 8.000</ion-select-option>
+          <ion-select-option value="Puente alto">Puente alto: 4.000</ion-select-option>
+          <ion-select-option value="Independecia">Independecia: 7.000</ion-select-option>
+          <ion-select-option value="Ñuñoa">Ñuñoa: 8.000</ion-select-option>
+          <ion-select-option value="Vitacura">Vitacura: 9.000</ion-select-option>
+          <ion-select-option value="Huechuraba">Huechuraba: 9.000</ion-select-option>
+          <ion-select-option value="Conchali">Conchali: 8.000</ion-select-option>
+          <ion-select-option value="Lo espejo">Lo espejo: 6.000</ion-select-option>
+          <ion-select-option value="La cisterna">La cisterna: 9.000</ion-select-option>
+          <ion-select-option value="San ramon">San ramon: 5.000</ion-select-option>
+          <ion-select-option value="La granja">La granja: 4.000</ion-select-option>
+          <ion-select-option value="San miguel">San miguel: 6.000</ion-select-option>
+          <ion-select-option value="San joaquin">San joaquin: 6.000</ion-select-option>
+          <ion-select-option value="El bosque">El bosque: 7.000</ion-select-option>
+          <ion-select-option value="Lo prado">Lo prado: 5.00</ion-select-option>
+          <ion-select-option value="Cerro navia">Cerro navia: 5.000</ion-select-option>
+          <ion-select-option value="Quilicura">Quilicura: 6.000</ion-select-option>
+          <ion-select-option value="Renca">Renca: 8.000</ion-select-option>
+          <ion-select-option value="Recoleta">Recoleta: 5.000</ion-select-option>
+          <ion-select-option value="Santiago">Santiago: 6.000</ion-select-option>
+          <ion-select-option value="Peñalolen">Peñalolen: 7.000</ion-select-option>
+  
+  
+  
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Seleccione su forma de pago" [multiple]="false">
+          <ion-select-option value="Efectivo">Efectivo </ion-select-option>
+          <ion-select-option value="Tarjetas">Tarjetas</ion-select-option> 
+          <ion-select-option value="Mercado pago">Mercado pago</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  
+
+  
+    <ion-button color="primary" class="btn" routerLink="/map" (click)="showLoading()">Confirmar viaje </ion-button>
+
+
+  </ion-content>
+  

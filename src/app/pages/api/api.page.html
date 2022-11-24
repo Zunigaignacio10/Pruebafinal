@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+
+
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="tertiary">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+
+      <ion-title color="tertiary">Tu Movil</ion-title>
+    
+ <ion-button (click)="logout()" expand="full" color="tertiary" class="btn2">
+  <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+  </ion-button>
+</ion-buttons>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo" color="danger">
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Conductores Destacados</ion-card-title>
+  </ion-card-header>
+<ion-card-content>
+ <ion-list *ngFor="let u of users">
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img alt="Silhouette of a person's head"   src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-thumbnail>
+    <ion-label>{{u.username}}</ion-label>
+  </ion-item>
+ </ion-list>
+</ion-card-content>
+</ion-card>
+
+
+
+</ion-content>
+

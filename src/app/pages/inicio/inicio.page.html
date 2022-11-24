@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+
+
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="tertiary">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+
+      <ion-title color="tertiary">Tu Movil</ion-title>
+    
+ <ion-button (click)="logout()" expand="full" color="tertiary" class="btn2">
+  <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+  </ion-button>
+</ion-buttons>
+
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="fondo">
+<ion-card-header>
+
+
+<ion-card class="body">
+  <ion-card-title class="titulo">TuMovil App</ion-card-title>
+ 
+  <icon-card>
+    <img src="assets/duoc.jpg" class="ion-padding">
+  </icon-card>
+  <ion-card-content>
+    <p class="parrafo">
+   Tu Movil Duoc es una App orientada en facilitar el retorno a casa de los estudiantes de la jornada vespertina de Duoc Uc
+   </p>
+   <icon-card>
+    <img src="assets/movil.jpg" class="ion-padding">
+  </icon-card>
+
+  <ion-button color="primary" class="btn" routerLink="/viaje">Pedir Viaje</ion-button>
+   
+  </ion-card-content>
+</ion-card>
+</ion-card-header>
+
+</ion-content>

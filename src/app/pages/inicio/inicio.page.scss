@@ -1,0 +1,34 @@
+.titulo{
+    padding: 10px;
+    color:rgb(4, 4, 54);
+    text-align: center;
+}
+.body{
+    background-color: white;
+}
+
+.parrafo{
+    text-align: center;
+    color:black;
+}
+.fondo{
+    background-color: rgb(50, 173, 230);
+}
+.btn{
+    padding-left: 16%;
+}
+ion-content {
+    #map {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 150ms ease-in;
+      display: block;
+      &.show-map{
+        opacity: 1;
+      }
+    }
+  }
+
+
+
